@@ -2,69 +2,84 @@
 <html>
 <head>
 <style>
+/*Google Fonts*/ 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+/*@_benjaminmacleod*/ 
 h1 {
-text-align: center;
-font-family: 'Lato', sans-serif;
-font-size: 100px;
-font-weight: 900;
-margin-top: 50px;
-margin-bottom: 10px;
-color:#252525;
-
-
-}
-h2 {
-text-align: center;
-font-family: 'Lato', sans-serif;
-font-size: 85px;
-font-weight: 700;
-margin-top: 10px;
-color: #3f8a6e;
-
-}
-a{
-text-decoration: none;
-}
-div {
-  background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  color:#3f8a6e;
+  font-size: 10vw;
+  font-weight: 900;
   text-align: center;
-    border-radius: 45px;
+  color:#252525;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/*Quicklinks*/ 
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 8vw;
+  font-weight: 700;
+  text-align: center;
+  color: #3f8a6e;
+  margin-top: 10px;
+}
+
+/*Hyperlink*/ 
+a{
+  text-decoration: none;
+}
+
+/*Buttons*/ 
+div {
+  /*Text Information*/ 
+  font-family: 'Lato', sans-serif;
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  color: #3f8a6e;
+
+  /*Box Information*/ 
+  background-color: #ffffff;
+  
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-
-  border: 10px solid #252525;
-  padding-top:20px;  
-  padding-bottom:20px;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  
+  padding-top:3vw;  
+  padding-bottom:3vw;
+  
+  border: 2vw solid #252525;
+  border-radius: 45px;
+  grid-template-columns: 1fr 1fr 1fr;
+  
   transition-duration: 0.1s;
   cursor: pointer;
   text-decoration: none;
   display: center;
-  href:"https://www.ccrce.ca" target="_blank"
-
 }
 
+/*Buttons (On Hover)*/ 
 div:hover {
   background-color: #3f8a6e;
   color:#ffffff;
-  }
+}
 </style>
 </head>
 <body>
 
+<!-- Title -->
 <h1>@_benjaminmacleod <br>━</h1>
 <h2>Quicklinks</h2>
 
+<!-- Button 1 -->
 <a href="https://bit.ly/_benjaminmacleod">
 <div>Benjamin's Page</div>
 </a>
+
+<!-- Button 2 -->
 <a href="https://back2schoolns.netlify.app/">
 <div>Back to School Countdown</div>
 </a>
