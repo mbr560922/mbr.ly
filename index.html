@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
 /*Google Fonts*/ 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-/*@_benjaminmacleod*/ 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-size: 10vw;
-  font-weight: 900;
-  text-align: center;
-  color:#252525;
-  margin-top: 50px;
-  margin-bottom: 10px;
+* {
+  box-sizing: border-box;
 }
 
-/*Quicklinks*/ 
-h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 8vw;
-  font-weight: 700;
+.menu {
+  float: left;
+  width: 20%;
   text-align: center;
-  color: #3f8a6e;
-  margin-top: 10px;
 }
 
-/*Hyperlink*/ 
-a{
-  text-decoration: none;
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: 3f8a6e;
 }
 
-/*Buttons*/ 
-div {
-  /*Text Information*/ 
-  font-family: 'Lato', sans-serif;
-  font-size: 4vw;
-  font-weight: 700;
-  text-align: center;
-  color: #3f8a6e;
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
 
-  /*Box Information*/ 
-  background-color: #ffffff;
-  
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-  
-  padding-top:3vw;  
-  padding-bottom:3vw;
-  
-  border: 2vw solid #252525;
-  border-radius: 45px;
-  grid-template-columns: 1fr 1fr 1fr;
-  
-  transition-duration: 0.1s;
+.buttons {
+transition-duration: 0.1s;
   cursor: pointer;
   text-decoration: none;
   display: center;
-}
-
-/*Buttons (On Hover)*/ 
-div:hover {
+  text-decoration: none; 
+  color:#3f8a6e;
+  }
+.buttons:hover {
   background-color: #3f8a6e;
   color:#ffffff;
+  }
+  .right:hover {
+  background-color: #3f8a6e;
+  color:#ffffff;
+  }
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
 </style>
 </head>
-<body>
+<body style="  font-family: 'Lato', sans-serif;" "text-decoration: none;">
 
-<!-- Title -->
-<h1>@_benjaminmacleod <br>━</h1>
-<h2>Quicklinks</h2>
+<div style="color:#ffffff; background-color:#3f8a6e;padding:15px;text-align:center;">
+  <h1>@_benjaminmacleod</h1>
+</div>
 
-<!-- Button 1 -->
-<a href="https://benjaminspage.wixsite.com/portfolio/">
-<div>Benjamin's Page</div>
-</a>
+<div style="overflow:auto;">
+  <div class="menu">
+    <a class="buttons" href="https://benjaminspage.wixsite.com/portfolio/;">Website</a>
+    <a class="buttons"href="#">Free Stuff</a>
+    <a class="buttons"href="https://christmas2021.netlify.app/">Christmas Countdown</a>
+    <a class="buttons"href="https://www.instagram.com/_benjaminmacleod/">Instagram</a>
+  </div>
 
-<!-- Button 2 -->
-<a href="https://christmas2021.netlify.app/">
-<div>Christmas 2021 Countdown</div>
-</a>
+  <div class="main">
+    <h2>Quicklinks</h2>
+    <p>Welcome to the Instagram Homepage for Benjamin MacLeod! Expect to see my latest projects and links to my much better designed website. The purpose of this site is to provide a slim down version compatable with Instagram's web browser for the Link in Bio.</p>
+  </div>
 
+
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© Copyright Benjamin MacLeod 2022, All Rights Reserved<br>Template created by W3Schools</div>
 
 </body>
 </html>
